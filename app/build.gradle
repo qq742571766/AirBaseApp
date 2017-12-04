@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+    defaultConfig {
+        applicationId "com.airtimes.baseapp"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/layouts',
+                    'src/main/res/layouts/login',
+                    'src/main/res/layouts/start',
+                    'src/main/res/layouts/main',
+                    'src/main/res/layouts/myneed',
+                    'src/main/res/layouts/password',
+                    'src/main/res/layouts/mymoney',
+                    'src/main/res/layouts/check'
+            ]
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-alpha-14'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile 'jp.wasabeef:recyclerview-animators:1.0.3@aar'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile project(':AirZxing')
+    compile project(':myneedmodule')
+}

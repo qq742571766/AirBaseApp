@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\shadow.png",
+        "source": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\shadow.png"
+    },
+    {
+        "merged": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\qr_code_bg.png",
+        "source": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\qr_code_bg.png"
+    },
+    {
+        "merged": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\scan_line.png",
+        "source": "F:\\Android\\tags\\BaseApp\\AirZxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\scan_line.png"
+    }
+]
